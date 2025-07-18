@@ -772,8 +772,8 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  width: .3125rem;
-  height: .3125rem;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
   border-radius: 50%;
   background-color: #9ea3b5
 }
@@ -1647,6 +1647,12 @@ body {
     font-size: 1.25rem
   }
   .hero__list-item:not(:last-child)::after {
+    width: .3125rem
+  }
+  .hero__list-item:not(:last-child)::after {
+    height: .3125rem
+  }
+  .hero__list-item:not(:last-child)::after {
     right: -1.625rem
   }
   .hero__highlights {
@@ -2012,7 +2018,13 @@ body {
     font-size: .875rem
   }
   .hero__list-item:not(:last-child)::after {
-    right: -.625rem
+    width: .1875rem
+  }
+  .hero__list-item:not(:last-child)::after {
+    height: .1875rem
+  }
+  .hero__list-item:not(:last-child)::after {
+    right: -.6875rem
   }
   .hero__list-item {
     color: #9399b2;
@@ -2936,14 +2948,34 @@ body {
       font-size: calc(.875rem + .375*(100vw - 20rem)/ 71.875)
     }
   }
-  @supports (right:clamp(-1.625rem ,-0.3467391304rem + -1.3913043478vw ,-0.625rem)) {
+  @supports (width:clamp(0.1875rem ,0.1527173913rem + 0.1739130435vw ,0.3125rem)) {
     .hero__list-item:not(:last-child)::after {
-      right: clamp(-1.625rem ,-.3467391304rem + -1.3913043478vw ,-.625rem)
+      width: clamp(.1875rem ,.1527173913rem + .1739130435vw ,.3125rem)
     }
   }
-  @supports not (right:clamp(-1.625rem ,-0.3467391304rem + -1.3913043478vw ,-0.625rem)) {
+  @supports not (width:clamp(0.1875rem ,0.1527173913rem + 0.1739130435vw ,0.3125rem)) {
     .hero__list-item:not(:last-child)::after {
-      right: calc(-.625rem + -1*(100vw - 20rem)/ 71.875)
+      width: calc(.1875rem + .125*(100vw - 20rem)/ 71.875)
+    }
+  }
+  @supports (height:clamp(0.1875rem ,0.1527173913rem + 0.1739130435vw ,0.3125rem)) {
+    .hero__list-item:not(:last-child)::after {
+      height: clamp(.1875rem ,.1527173913rem + .1739130435vw ,.3125rem)
+    }
+  }
+  @supports not (height:clamp(0.1875rem ,0.1527173913rem + 0.1739130435vw ,0.3125rem)) {
+    .hero__list-item:not(:last-child)::after {
+      height: calc(.1875rem + .125*(100vw - 20rem)/ 71.875)
+    }
+  }
+  @supports (right:clamp(-1.625rem ,-0.4266304348rem + -1.3043478261vw ,-0.6875rem)) {
+    .hero__list-item:not(:last-child)::after {
+      right: clamp(-1.625rem ,-.4266304348rem + -1.3043478261vw ,-.6875rem)
+    }
+  }
+  @supports not (right:clamp(-1.625rem ,-0.4266304348rem + -1.3043478261vw ,-0.6875rem)) {
+    .hero__list-item:not(:last-child)::after {
+      right: calc(-.6875rem + -.9375*(100vw - 20rem)/ 71.875)
     }
   }
   @supports ((-moz-column-gap:clamp(3.4375rem ,3.2809782609rem + 0.7826086957vw ,4rem)) or (column-gap:clamp(3.4375rem ,3.2809782609rem + 0.7826086957vw ,4rem))) {
