@@ -5,20 +5,24 @@
 	<title>HomeServices</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250723155650">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20250802203914">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<div class="header__logo">
+				<a href="#" class="header__logo">
 					<img src="img/header/logo.svg" alt="logo">
-				</div>
+				</a>
 				<div class="header__menu menu">
 					<button type="button" aria-label="Toggle menu" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
@@ -33,7 +37,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div data-da=".menu__body, 767.98" class="header__schedule">24 Hour Services</div>
+				<div data-da=".menu__body, 991.98" class="header__schedule">24 Hour Services</div>
 			</div>
 		</header>
 		<main class="page">
@@ -42,15 +46,20 @@
 					<div class="hero__image ibg hero__image--left">
 						<picture><source srcset="img/hero/image-left.webp" type="image/webp"><img src="img/hero/image-left.png" alt="image"></picture>
 					</div>
-					<div class="hero__body">
+					<div data-watch class="hero__body">
 						<div class="hero__body-column">
 							<ul class="hero__list">
 								<li class="hero__list-item">Maintenances</li>
 								<li class="hero__list-item">Repairs</li>
 								<li class="hero__list-item">Improvements</li>
 							</ul>
-							<h1 class="hero__title title title--white-big">Need improvement or repair your home? we can
-								help!</h1>
+							<h1 class="hero__title title title--white-big">
+								Need improvement
+								or
+								repair your
+								home? We can
+								help!
+							</h1>
 							<ul class="hero__feature-list tick-list">
 								<li class="hero__feature-list-item tick-list__item">Free Quotes</li>
 								<li class="hero__feature-list-item tick-list__item">100% Commitment-Free</li>
@@ -100,7 +109,7 @@
 			</section>
 
 			<!-- PROFESSIONALS =================================================================================================================== -->
-			<section data-watch="navigator" class="page__professional professional">
+			<section data-watch="navigator" data-watch-threshold="0.2" class="page__professional professional">
 				<div class="professional__container">
 					<div class="professional__content">
 						<div class="professional__title-block title-block">
@@ -116,7 +125,7 @@
 						</div>
 						<ul class="professional__list">
 							<li class="professional__list-item">Repair and Installation</li>
-							<li class="professional__list-item"> Plumbing</li>
+							<li class="professional__list-item">Plumbing</li>
 							<li class="professional__list-item">Maintenance</li>
 							<li class="professional__list-item">Budget-friendly</li>
 							<li class="professional__list-item">Home Security Services</li>
@@ -144,11 +153,11 @@
 			OUR SERVICES
 			============================================================================================================= -->
 
-			<section data-watch="navigator" class="page__services services">
+			<section data-watch="navigator" data-watch-threshold="0.3" class="page__services services">
 				<div class="services__container">
 					<div class="services__title-block title-block title-block--centre">
-						<h2 class="title">Our Services</h2>
-						<div class="title-block-text ">
+						<h2 class="services__title title">Our Services</h2>
+						<div class="services__text title-block-text ">
 							<p>You have problems with leaking pipes, broken tiles, lost keys or want to tidy up the
 								trees around you, of course you need our help!</p>
 						</div>
@@ -247,7 +256,7 @@
 			<!-- 
 			Guarantee
 			============================================================================================================= -->
-			<section class="page__guarantee guarantee">
+			<section data-watch data-watch-threshold="0.3" class="page__guarantee guarantee">
 				<div class="guarantee__body">
 					<div class="guarantee__container">
 						<div class="guarantee__content">
@@ -255,7 +264,7 @@
 								<h2 class="guarantee__title title title--white">Fast, Friendly, and Satisfaction
 									Guarantee
 								</h2>
-								<div class="title-block-text title-block-text--grey">
+								<div class="guarantee__text title-block-text title-block-text--grey">
 									<p>No matter how big or small your work is, whether it's for the interior or
 										exterior of
 										your home, we are ready to serve and help you solve your home problems.
@@ -271,10 +280,15 @@
 										<h3 class="guarantee__item-title title-white-small">
 											Satisfaction
 											Guarantee</h3>
-										<div class="guarantee__item-text title-block-text title-block-text--grey">you
-											don't need to worry about scams or our performance results. our company has
-											been
-											verified and strives for optimal results</div>
+										<div class="guarantee__item-text title-block-text title-block-text--grey">
+											<p>
+												you
+												don't need to worry about scams or our performance results. our company
+												has
+												been
+												verified and strives for optimal results
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="guarantee__item">
@@ -285,9 +299,14 @@
 										<h3 class="guarantee__item-title title-white-small">Free
 											Quotes
 										</h3>
-										<div class="guarantee__item-text title-block-text title-block-text--grey">Get
-											personalized cost estimates without any obligation. Experience transparency
-											and peace of mind as you explore our service.</div>
+										<div class="guarantee__item-text title-block-text title-block-text--grey">
+											<p>
+												Get
+												personalized cost estimates without any obligation. Experience
+												transparency
+												and peace of mind as you explore our service.
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="guarantee__item">
@@ -297,9 +316,14 @@
 									<div class="guarantee__item-title-block">
 										<h3 class="guarantee__item-title title-white-small">Local
 											Professionals</h3>
-										<div class="guarantee__item-text title-block-text title-block-text--grey">Our
-											services cover the Nationwide, US area, including urban, suburban, and rural
-											locations for both long and short term maintenance </div>
+										<div class="guarantee__item-text title-block-text title-block-text--grey">
+											<p>
+												Our
+												services cover the Nationwide, US area, including urban, suburban, and
+												rural
+												locations for both long and short term maintenance
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="guarantee__item">
@@ -310,9 +334,14 @@
 										<h3 class="guarantee__item-title title-white-small">Fast
 											24-Hour
 											Service</h3>
-										<div class="guarantee__item-text title-block-text title-block-text--grey">need
-											fast handling for repairs to drains, leaks or something else? Our experts
-											are available anytime to help you solve the problem</div>
+										<div class="guarantee__item-text title-block-text title-block-text--grey">
+											<p>
+												need
+												fast handling for repairs to drains, leaks or something else? Our
+												experts
+												are available anytime to help you solve the problem
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="guarantee__item">
@@ -322,9 +351,14 @@
 									<div class="guarantee__item-title-block">
 										<h3 class="guarantee__item-title title-white-small">Flexible
 											Appointments</h3>
-										<div class="guarantee__item-text title-block-text title-block-text--grey">We
-											offer convenient appointment times that can accommodate your busy schedule,
-											day or night, 7 days a week.</div>
+										<div class="guarantee__item-text title-block-text title-block-text--grey">
+											<p>
+												We
+												offer convenient appointment times that can accommodate your busy
+												schedule,
+												day or night, 7 days a week.
+											</p>
+										</div>
 									</div>
 								</div>
 								<div class="guarantee__item">
@@ -334,9 +368,13 @@
 									<div class="guarantee__item-title-block">
 										<h3 class="guarantee__item-title title-white-small">100%
 											Commitment-Free</h3>
-										<div class="guarantee__item-text title-block-text title-block-text--grey">You
-											are free to ask us about the problems you are facing. We offer a
-											no-commitment approach to put your mind at ease</div>
+										<div class="guarantee__item-text title-block-text title-block-text--grey">
+											<p>
+												You
+												are free to ask us about the problems you are facing. We offer a
+												no-commitment approach to put your mind at ease
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -347,7 +385,7 @@
 			<!-- 
 				HOW
 				============================================================================================================= -->
-			<section class="page__how how">
+			<section data-watch data-watch-threshold="0.3" class="page__how how">
 				<div class="how__container">
 					<div class="how__image">
 						<picture><source srcset="img/how/Image.webp" type="image/webp"><img src="img/how/Image.jpg" alt="Image"></picture>
@@ -358,7 +396,7 @@
 							<li class="how__list-item item-how">
 								<div class="item-how__title-block">
 									<h3 class="item-how__title title-black-small">Call us anytime 24/7</h3>
-									<div class="item-how__text title-block-text title-block-text--grey">
+									<div class="item-how__block-text title-block-text title-block-text--grey">
 										<p>You can contact us directly, we will quickly put you in touch with our home
 											care
 											professionals who are ready anytime</p>
@@ -368,7 +406,7 @@
 							<li class="how__list-item item-how">
 								<div class="item-how__title-block title-block title-block--inline-small">
 									<h3 class="item-how__title title-black-small">Schedule Service</h3>
-									<div class="item-how__text title-block-text title-block-text--grey">
+									<div class="item-how__block-text title-block-text title-block-text--grey">
 										<p>After connecting your call, our home care experts will answer your questions
 											and provide flexible appointment timese</p>
 									</div>
@@ -377,7 +415,7 @@
 							<li class="how__list-item item-how">
 								<div class="item-how__title-block title-block title-block--inline-small">
 									<h3 class="item-how__title title-black-small">Your request is complated</h3>
-									<div class="item-how__text title-block-text title-block-text--grey">
+									<div class="item-how__block-text title-block-text title-block-text--grey">
 										<p>Once your technician arrives, he will diagnose the problem and provide an
 											estimate. If you decide to continue, the technician will get to work</p>
 									</div>
@@ -390,7 +428,7 @@
 			<!-- 
 			REVIEWS
 				============================================================================================================= -->
-			<section class="page__reviews reviews">
+			<section data-watch data-watch-threshold="0.15" class="page__reviews reviews">
 				<div class="reviews__container">
 					<div class="reviews__content">
 						<h2 class="reviews__title title title--black-center">Here our original reviews from trusted
@@ -400,10 +438,10 @@
 								<div class="reviews__wrapper swiper-wrapper">
 									<div class="reviews__slide swiper-slide">
 										<div class="reviews__slide-content">
-											<div class="reviews__slide-logo">
+											<div class="reviews__slide-logo" data-swiper-parallax="-600">
 												<picture><source srcset="img/reviews/logo.webp" type="image/webp"><img src="img/reviews/logo.jpg" alt="Logo"></picture>
 											</div>
-											<div class="reviews__slide-text">
+											<div class="reviews__slide-text" data-swiper-parallax="-1000">
 												<p>
 													Roof repairs can be a real headache, but HomePro makes it easy!
 													Their
@@ -413,7 +451,7 @@
 													any storm.
 												</p>
 											</div>
-											<div class="reviews__slide-user">
+											<div class="reviews__slide-user" data-swiper-parallax="-400">
 												<div class="reviews__slide-avatar">
 													<picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.jpg" alt="Avatar"></picture>
 												</div>
@@ -449,10 +487,18 @@
 									</div>
 									<div class="reviews__slide swiper-slide">
 										<div class="reviews__slide-content">
-											<div class="reviews__slide-logo">
+											<div class="reviews__slide-logo" data-swiper-parallax="-600">
 												<picture><source srcset="img/reviews/logo.webp" type="image/webp"><img src="img/reviews/logo.jpg" alt="Logo"></picture>
 											</div>
-											<div class="reviews__slide-text">
+											<div class="reviews__slide-text" data-swiper-parallax="-1000">
+												<p>
+													Roof repairs can be a real headache, but HomePro makes it easy!
+													Their
+													roofing team turned my leaky roof into a stockade. With their
+													craftsmanship and the best materials, my house is now ready to
+													weather
+													any storm.
+												</p>
 												<p>
 													Roof repairs can be a real headache, but HomePro makes it easy!
 													Their
@@ -462,7 +508,7 @@
 													any storm.
 												</p>
 											</div>
-											<div class="reviews__slide-user">
+											<div class="reviews__slide-user" data-swiper-parallax="-400">
 												<div class="reviews__slide-avatar">
 													<picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.jpg" alt="Avatar"></picture>
 												</div>
@@ -498,10 +544,10 @@
 									</div>
 									<div class="reviews__slide swiper-slide">
 										<div class="reviews__slide-content">
-											<div class="reviews__slide-logo">
+											<div class="reviews__slide-logo" data-swiper-parallax="-600">
 												<picture><source srcset="img/reviews/logo.webp" type="image/webp"><img src="img/reviews/logo.jpg" alt="Logo"></picture>
 											</div>
-											<div class="reviews__slide-text">
+											<div class="reviews__slide-text" data-swiper-parallax="-1000">
 												<p>
 													Roof repairs can be a real headache, but HomePro makes it easy!
 													Their
@@ -511,7 +557,7 @@
 													any storm.
 												</p>
 											</div>
-											<div class="reviews__slide-user">
+											<div class="reviews__slide-user" data-swiper-parallax="-400">
 												<div class="reviews__slide-avatar">
 													<picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.jpg" alt="Avatar"></picture>
 												</div>
@@ -547,10 +593,10 @@
 									</div>
 									<div class="reviews__slide swiper-slide">
 										<div class="reviews__slide-content">
-											<div class="reviews__slide-logo">
+											<div class="reviews__slide-logo" data-swiper-parallax="-600">
 												<picture><source srcset="img/reviews/logo.webp" type="image/webp"><img src="img/reviews/logo.jpg" alt="Logo"></picture>
 											</div>
-											<div class="reviews__slide-text">
+											<div class="reviews__slide-text" data-swiper-parallax="-1000">
 												<p>
 													Roof repairs can be a real headache, but HomePro makes it easy!
 													Their
@@ -560,14 +606,16 @@
 													any storm.
 												</p>
 											</div>
-											<div class="reviews__slide-user">
+											<div class="reviews__slide-user" data-swiper-parallax="-400">
 												<div class="reviews__slide-avatar">
 													<picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.jpg" alt="Avatar"></picture>
 												</div>
 												<div class="reviews__user-rating">
 													<div class="reviews__slide-username">Kende Attila</div>
+
 													<div class="reviews__slide-rating rating">
 														<div class="rating__body">
+															<div class="rating__active"></div>
 															<div class="rating__items">
 																<label class="rating__item">
 																	<input class="rating__input" type="radio" name="rating" value="1">
@@ -593,8 +641,6 @@
 										</div>
 									</div>
 								</div>
-
-
 								<button type="button" class="reviews__button reviews__button-prev swiper-button-prev"></button>
 								<button type="button" class="reviews__button reviews__button-next swiper-button-next"></button>
 							</div>
@@ -607,19 +653,19 @@
 			<!-- 
 			INSIGHTS
 				============================================================================================================= -->
-			<section data-watch="navigator" data-goto-header class="page__insights insights">
+			<section class="page__insights insights">
 				<div class="insights__container">
 					<div class="insights__wrapper">
-						<div class="insights__block-title title-block title-block--centre">
+						<div data-watch="navigator" data-goto-header data-watch-once class="insights__block-title title-block title-block--centre">
 							<h3 class="insights__title title">Explore Insights in Our Blog</h3>
-							<div class="title-block-text">
+							<div class="insights__text title-block-text">
 								<p>Find lots of insights and information on our blog. Explore, learn, and get inspired
 									today.</p>
 							</div>
 						</div>
-						<div data-showmore="items" class="block">
+						<div data-watch data-showmore="items" class="block">
 							<ul data-showmore-content="1" class="block__content">
-								<li class="block__content-item">
+								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/01.webp" type="image/webp"><img src="img/insights/01.jpg" alt="Image"></picture>
@@ -630,7 +676,7 @@
 													Systems &
 													Maintenance</a>
 											</h4>
-											<div class="item-insights__text title-block-text">
+											<div class="item-insights__block-text title-block-text">
 												<p>
 													Discover the ultimate guide to troubleshooting common smart home
 													issues
@@ -658,7 +704,7 @@
 										</div>
 									</article>
 								</li>
-								<li class="block__content-item">
+								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/02.webp" type="image/webp"><img src="img/insights/02.jpg" alt="Image"></picture>
@@ -671,7 +717,7 @@
 													Renovations</a>
 											</h4>
 
-											<div class="item-insights__text title-block-text">
+											<div class="item-insights__block-text title-block-text">
 												<p>
 													Discover the ultimate guide to troubleshooting common smart home
 													issues
@@ -699,7 +745,7 @@
 										</div>
 									</article>
 								</li>
-								<li class="block__content-item">
+								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/03.webp" type="image/webp"><img src="img/insights/03.jpg" alt="Image"></picture>
@@ -710,7 +756,7 @@
 													Kitchen
 													Refresh</a>
 											</h4>
-											<div class="item-insights__text title-block-text">
+											<div class="item-insights__block-text title-block-text">
 												<p>
 													Discover the ultimate guide to troubleshooting common smart home
 													issues
@@ -738,7 +784,7 @@
 										</div>
 									</article>
 								</li>
-								<li class="block__content-item">
+								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/01.webp" type="image/webp"><img src="img/insights/01.jpg" alt="Image"></picture>
@@ -749,7 +795,7 @@
 													Systems &
 													Maintenance</a>
 											</h4>
-											<div class="item-insights__text title-block-text">
+											<div class="item-insights__block-text title-block-text">
 												<p>
 													Discover the ultimate guide to troubleshooting common smart home
 													issues
@@ -777,7 +823,7 @@
 										</div>
 									</article>
 								</li>
-								<li class="block__content-item">
+								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/02.webp" type="image/webp"><img src="img/insights/02.jpg" alt="Image"></picture>
@@ -789,7 +835,7 @@
 													and
 													Renovations</a>
 											</h4>
-											<div class="item-insights__text title-block-text">
+											<div class="item-insights__block-text title-block-text">
 												<p>
 													Discover the ultimate guide to troubleshooting common smart home
 													issues
@@ -817,7 +863,7 @@
 										</div>
 									</article>
 								</li>
-								<li class="block__content-item">
+								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/03.webp" type="image/webp"><img src="img/insights/03.jpg" alt="Image"></picture>
@@ -829,7 +875,7 @@
 													Refresh</a>
 											</h4>
 
-											<div class="item-insights__text title-block-text">
+											<div class="item-insights__block-text title-block-text">
 												<p>
 													Discover the ultimate guide to troubleshooting common smart home
 													issues
@@ -872,18 +918,17 @@
 				<div class="faq__container">
 					<div class="faq__columns">
 						<div class="faq__title-column">
-							<div class="faq__title-block">
+							<div data-watch class="faq__title-block">
 								<h4 class="faq__title title">Frequently Asked Questions</h4>
 								<div class="faq__help-block">
 									<p>Still need help? <a href="#"> Get Help Now</a></p>
-
 								</div>
 							</div>
 						</div>
 
 						<div class="faq__spoilers-column">
 							<div class="faq__spoilers ">
-								<div class="faq__spoiler">
+								<div data-watch data-watch-once data-watch-threshold="0.2" class="faq__spoiler">
 									<h4 data-spoiler class="faq__spoiler-title"><button class="faq__spoiler-button">What
 											is
 											HomePro?</button>
@@ -897,7 +942,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="faq__spoiler">
+								<div data-watch data-watch-once data-watch-threshold="0.2" class="faq__spoiler">
 									<h4 data-spoiler class="faq__spoiler-title"><button class="faq__spoiler-button">Are
 											the service providers on HomePro reliable and qualified?</button>
 									</h4>
@@ -910,7 +955,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="faq__spoiler">
+								<div data-watch data-watch-once data-watch-threshold="0.2" class="faq__spoiler">
 									<h4 data-spoiler class="faq__spoiler-title"><button class="faq__spoiler-button">What
 											if I have an issue or complaint about a service provider?</button>
 									</h4>
@@ -923,7 +968,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="faq__spoiler">
+								<div data-watch data-watch-once data-watch-threshold="0.2" class="faq__spoiler">
 									<h4 data-spoiler class="faq__spoiler-title"><button class="faq__spoiler-button">How
 											are payments handled on HomePro?</button>
 									</h4>
@@ -936,7 +981,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="faq__spoiler">
+								<div data-watch data-watch-once data-watch-threshold="0.2" class="faq__spoiler">
 									<h4 data-spoiler class="faq__spoiler-title"><button class="faq__spoiler-button">How
 											do I leave a review for a service provider?</button>
 									</h4>
@@ -954,7 +999,7 @@
 					</div>
 				</div>
 			</section>
-			<section data-watch="navigator" data-goto-header class="page__talk talk">
+			<section data-watch="navigator" data-watch data-watch-threshold="0.2" data-goto-header class="page__talk talk">
 				<div class="talk__container">
 					<div class="talk__columns">
 						<div class="talk__content-column">
@@ -1036,7 +1081,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250723155650"></script>
+	<script src="js/app.min.js?_v=20250802203914"></script>
 </body>
 
 </html>
