@@ -1207,12 +1207,8 @@ body {
 .reviews__slider-wrapper {
   position: relative
 }
-.reviews__slider-wrapper:not(:last-child) {
-  margin-bottom: 4.125rem
-}
 .reviews__slide {
-  text-align: center;
-  min-height: 100%
+  text-align: center
 }
 .reviews__slide-logo {
   aspect-ratio: 207/56;
@@ -1880,6 +1876,11 @@ body {
     display: none
   }
 }
+@media (min-width:29.99875em) {
+  .reviews__slide {
+    min-height: 100%
+  }
+}
 @media (min-width:61.99875em) {
   .professional__content {
     padding-right: 1.5625rem
@@ -2133,6 +2134,9 @@ body {
   }
   .reviews__title:not(:last-child) {
     margin-bottom: 5.625rem
+  }
+  .reviews__slider-wrapper:not(:last-child) {
+    margin-bottom: 4.125rem
   }
   .reviews__slide-text {
     font-size: 1.25rem
@@ -2496,6 +2500,9 @@ body {
     padding-bottom: 2rem
   }
   .reviews__title:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+  .reviews__slider-wrapper:not(:last-child) {
     margin-bottom: 1.875rem
   }
   .reviews__slide-text {
@@ -3602,6 +3609,16 @@ body {
   @supports not (margin-bottom:clamp(1.875rem ,0.8315217391rem + 5.2173913043vw ,5.625rem)) {
     .reviews__title:not(:last-child) {
       margin-bottom: calc(1.875rem + 3.75*(100vw - 20rem)/ 71.875)
+    }
+  }
+  @supports (margin-bottom:clamp(1.875rem ,1.2489130435rem + 3.1304347826vw ,4.125rem)) {
+    .reviews__slider-wrapper:not(:last-child) {
+      margin-bottom: clamp(1.875rem ,1.2489130435rem + 3.1304347826vw ,4.125rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(1.875rem ,1.2489130435rem + 3.1304347826vw ,4.125rem)) {
+    .reviews__slider-wrapper:not(:last-child) {
+      margin-bottom: calc(1.875rem + 2.25*(100vw - 20rem)/ 71.875)
     }
   }
   @supports (font-size:clamp(1.125rem ,1.0902173913rem + 0.1739130435vw ,1.25rem)) {
