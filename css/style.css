@@ -875,10 +875,24 @@ body {
   margin-bottom: 1.5rem
 }
 .hero__feature-list {
+  opacity: 0;
+  transition: opacity .5s ease;
   justify-content: center
+}
+._watcher-view .hero__feature-list {
+  transition: opacity 1s ease 1.3s;
+  opacity: 1
 }
 .hero__feature-list:not(:last-child) {
   margin-bottom: 2.25rem
+}
+.hero__call-button {
+  opacity: 0;
+  transition: opacity .5s ease
+}
+._watcher-view .hero__call-button {
+  transition: opacity 1s ease 1.8s;
+  opacity: 1
 }
 .hero__call-button:not(:last-child) {
   margin-bottom: 3rem
