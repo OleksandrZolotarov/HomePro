@@ -107,8 +107,9 @@ body {
 }
 .button {
   display: inline-flex;
+  min-width: 10.9375rem;
   padding: .5rem .5rem .5rem 1.5rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: .75rem;
   background-color: #15b2f5;
@@ -4168,9 +4169,6 @@ body {
   }
 }
 @media (any-hover:hover) {
-  .button:hover {
-    background-color: #1f3584
-  }
   .button:hover::after {
     -webkit-animation: vibrate .15s linear 6;
     animation: vibrate .15s linear 6
