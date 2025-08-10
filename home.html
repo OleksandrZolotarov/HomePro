@@ -11,7 +11,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250802220012">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250810220320">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 </head>
@@ -46,7 +46,7 @@
 					<div class="hero__image ibg hero__image--left">
 						<picture><source srcset="img/hero/image-left.webp" type="image/webp"><img src="img/hero/image-left.png" alt="image"></picture>
 					</div>
-					<div data-watch class="hero__body">
+					<div data-watch data-watch-once class="hero__body">
 						<div class="hero__body-column">
 							<ul class="hero__list">
 								<li class="hero__list-item">Maintenances</li>
@@ -109,8 +109,8 @@
 			</section>
 
 			<!-- PROFESSIONALS =================================================================================================================== -->
-			<section data-watch="navigator" data-watch-threshold="0.2" class="page__professional professional">
-				<div class="professional__container">
+			<section data-watch="navigator" class="page__professional professional">
+				<div data-watch data-watch-threshold="0.2" data-watch-once class="professional__container">
 					<div class="professional__content">
 						<div class="professional__title-block title-block">
 							<h2 class="professional__title title">Professional for your home services</h2>
@@ -153,9 +153,9 @@
 			OUR SERVICES
 			============================================================================================================= -->
 
-			<section class="page__services services">
+			<section data-watch="navigator" class="page__services services">
 				<div class="services__container">
-					<div data-watch="navigator" data-watch-threshold="0.3" class="services__title-block title-block title-block--centre">
+					<div data-watch="" data-watch-threshold="0.3" data-watch-once class="services__title-block title-block title-block--centre">
 						<h2 class="services__title title">Our Services</h2>
 						<div class="services__text title-block-text ">
 							<p>You have problems with leaking pipes, broken tiles, lost keys or want to tidy up the
@@ -260,7 +260,7 @@
 				<div class="guarantee__body">
 					<div class="guarantee__container">
 						<div class="guarantee__content">
-							<div data-watch data-watch-threshold="0.3" class="guarantee__title-block title-block title-block--inline">
+							<div data-watch data-watch-threshold="0.3" data-watch-once class="guarantee__title-block title-block title-block--inline">
 								<h2 class="guarantee__title title title--white">Fast, Friendly, and Satisfaction
 									Guarantee
 								</h2>
@@ -385,7 +385,7 @@
 			<!-- 
 				HOW
 				============================================================================================================= -->
-			<section data-watch data-watch-threshold="0.15" class="page__how how">
+			<section data-watch data-watch-threshold="0.15" data-watch-once class="page__how how">
 				<div class="how__container">
 					<div class="how__image">
 						<picture><source srcset="img/how/Image.webp" type="image/webp"><img src="img/how/Image.jpg" alt="Image"></picture>
@@ -428,7 +428,7 @@
 			<!-- 
 			REVIEWS
 				============================================================================================================= -->
-			<section data-watch data-watch-threshold="0.15" class="page__reviews reviews">
+			<section data-watch data-watch-threshold="0.15" data-watch-once class="page__reviews reviews">
 				<div class="reviews__container">
 					<div class="reviews__content">
 						<h2 class="reviews__title title title--black-center">Here our original reviews from trusted
@@ -648,17 +648,17 @@
 			<!-- 
 			INSIGHTS
 				============================================================================================================= -->
-			<section class="page__insights insights">
+			<section data-watch="navigator" class="page__insights insights">
 				<div class="insights__container">
 					<div class="insights__wrapper">
-						<div data-watch="navigator" data-goto-header data-watch-once class="insights__block-title title-block title-block--centre">
+						<div data-watch data-watch-once class="insights__block-title title-block title-block--centre">
 							<h3 class="insights__title title">Explore Insights in Our Blog</h3>
 							<div class="insights__text title-block-text">
 								<p>Find lots of insights and information on our blog. Explore, learn, and get inspired
 									today.</p>
 							</div>
 						</div>
-						<div data-watch data-showmore="items" class="block">
+						<div data-watch data-watch-once data-showmore="items" class="block">
 							<ul data-showmore-content="1" class="block__content">
 								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
 									<article class="insights__item item-insights">
@@ -913,7 +913,7 @@
 				<div class="faq__container">
 					<div class="faq__columns">
 						<div class="faq__title-column">
-							<div data-watch class="faq__title-block">
+							<div data-watch data-watch-once class="faq__title-block">
 								<h4 class="faq__title title">Frequently Asked Questions</h4>
 								<div class="faq__help-block">
 									<p>Still need help? <a href="#"> Get Help Now</a></p>
@@ -994,10 +994,10 @@
 					</div>
 				</div>
 			</section>
-			<section data-watch="navigator" data-watch data-watch-threshold="0.2" data-goto-header class="page__talk talk">
+			<section data-watch="navigator" class="page__talk talk">
 				<div class="talk__container">
 					<div class="talk__columns">
-						<div class="talk__content-column">
+						<div data-watch data-watch-threshold="0.2" data-watch-once class="talk__content-column">
 							<h2 class="talk__title title title--white-big">Already to improve or repair your home? Let's
 								Talk!
 							</h2>
@@ -1076,7 +1076,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250802220012"></script>
+	<script src="js/app.min.js?_v=20250810220320"></script>
 </body>
 
 </html>

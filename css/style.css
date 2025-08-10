@@ -2944,6 +2944,15 @@ body {
   .tick-list {
     gap: 1.25rem
   }
+  .footer__newsletter {
+    border-radius: 0;
+    margin-left: -.9375rem;
+    margin-right: -.9375rem
+  }
+  .footer__input {
+    padding-top: .3125rem;
+    padding-bottom: .4375rem
+  }
   .footer__form-button {
     padding: .5rem 1rem
   }
