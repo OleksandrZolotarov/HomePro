@@ -717,6 +717,7 @@ body {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  will-change: transform;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s,-webkit-transform .3s
