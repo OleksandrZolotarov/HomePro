@@ -11,7 +11,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250810222443">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250811235529">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 </head>
@@ -30,7 +30,7 @@
 							<li class="menu__item"><a href="#" data-goto=".professional" data-goto-header class="menu__link">About Us</a>
 							</li>
 							<li class="menu__item"><a href="#" data-goto=".services" data-goto-header class="menu__link">Services</a></li>
-							<li class="menu__item"><a href="#" data-goto=".insights" data-goto-header class="menu__link">Our
+							<li class="menu__item"><a href="#" data-goto=".insights__text" data-goto-header data-goto-top="200" class="menu__link">Our
 									Blog</a></li>
 							<li class="menu__item"><a href="#" data-goto=".talk" data-goto-header class="menu__link">Contact</a>
 							</li>
@@ -110,7 +110,7 @@
 
 			<!-- PROFESSIONALS =================================================================================================================== -->
 			<section data-watch="navigator" class="page__professional professional">
-				<div data-watch data-watch-threshold="0.2" data-watch-once class="professional__container">
+				<div data-watch data-watch-threshold="0.3" data-watch-once class="professional__container">
 					<div class="professional__content">
 						<div class="professional__title-block title-block">
 							<h2 class="professional__title title">Professional for your home services</h2>
@@ -648,19 +648,21 @@
 			<!-- 
 			INSIGHTS
 				============================================================================================================= -->
-			<section data-watch="navigator" class="page__insights insights">
+			<section class="page__insights insights">
 				<div class="insights__container">
 					<div class="insights__wrapper">
 						<div data-watch data-watch-once class="insights__block-title title-block title-block--centre">
-							<h3 class="insights__title title">Explore Insights in Our Blog</h3>
-							<div class="insights__text title-block-text">
+							<h3 class="insights__title title">Explore Insights in
+								Our Blog
+							</h3>
+							<div data-watch="navigator" class="insights__text title-block-text">
 								<p>Find lots of insights and information on our blog. Explore, learn, and get inspired
 									today.</p>
 							</div>
 						</div>
-						<div data-watch data-watch-once data-showmore="items" class="block">
+						<div data-showmore="items" class="block">
 							<ul data-showmore-content="1" class="block__content">
-								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
+								<li data-watch data-watch-once data-watch-threshold="0.2" class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/01.webp" type="image/webp"><img src="img/insights/01.jpg" alt="Image"></picture>
@@ -699,7 +701,7 @@
 										</div>
 									</article>
 								</li>
-								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
+								<li data-watch data-watch-once data-watch-threshold="0.2" class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/02.webp" type="image/webp"><img src="img/insights/02.jpg" alt="Image"></picture>
@@ -740,7 +742,7 @@
 										</div>
 									</article>
 								</li>
-								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
+								<li data-watch data-watch-once data-watch-threshold="0.2" class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/03.webp" type="image/webp"><img src="img/insights/03.jpg" alt="Image"></picture>
@@ -779,7 +781,7 @@
 										</div>
 									</article>
 								</li>
-								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
+								<li data-watch data-watch-once data-watch-threshold="0.2" class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/01.webp" type="image/webp"><img src="img/insights/01.jpg" alt="Image"></picture>
@@ -818,7 +820,7 @@
 										</div>
 									</article>
 								</li>
-								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
+								<li data-watch data-watch-once data-watch-threshold="0.2" class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/02.webp" type="image/webp"><img src="img/insights/02.jpg" alt="Image"></picture>
@@ -858,7 +860,7 @@
 										</div>
 									</article>
 								</li>
-								<li data-watch data-watch-threshold="0.8" data-watch-once class="block__content-item">
+								<li data-watch data-watch-once data-watch-threshold="0.2" class="block__content-item">
 									<article class="insights__item item-insights">
 										<a href="#" class=" item-insights__image">
 											<picture><source srcset="img/insights/03.webp" type="image/webp"><img src="img/insights/03.jpg" alt="Image"></picture>
@@ -1076,7 +1078,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250810222443"></script>
+	<script src="js/app.min.js?_v=20250811235529"></script>
 </body>
 
 </html>
