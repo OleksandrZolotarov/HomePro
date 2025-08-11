@@ -1997,6 +1997,9 @@ body {
   .page {
     margin-top: 5.75rem
   }
+  .page__hero {
+    margin-bottom: 5.625rem
+  }
   .hero::before {
     left: .0000000625rem
   }
@@ -2043,9 +2046,6 @@ body {
   }
   .hero__highlights-text p {
     font-size: 1.125rem
-  }
-  .professional {
-    padding-top: 5.625rem
   }
   .professional {
     padding-bottom: 5.625rem
@@ -2257,8 +2257,8 @@ body {
   }
 }
 @media (max-width:62em) {
-  .professional {
-    padding-top: 2.5rem
+  .page__hero {
+    margin-bottom: 2.5rem
   }
   .professional__content {
     padding-top: 2rem
@@ -4043,27 +4043,15 @@ body {
     }
   }
 }
-@media (min-width:61.99875em)and (max-width:91.875em) {
-  @supports (width:clamp(12.5rem ,-14.9962030877rem + 44.349608803vw ,25.75rem)) {
-    .hero__image {
-      width: clamp(12.5rem ,-14.9962030877rem + 44.349608803vw ,25.75rem)
-    }
-  }
-  @supports not (width:clamp(12.5rem ,-14.9962030877rem + 44.349608803vw ,25.75rem)) {
-    .hero__image {
-      width: calc(12.5rem + 13.25*(100vw - 61.99875rem)/ 29.87625)
-    }
-  }
-}
 @media (min-width:62em)and (max-width:91.875em) {
-  @supports (padding-top:clamp(2.5rem ,-3.9853556485rem + 10.460251046vw ,5.625rem)) {
-    .professional {
-      padding-top: clamp(2.5rem ,-3.9853556485rem + 10.460251046vw ,5.625rem)
+  @supports (margin-bottom:clamp(2.5rem ,-3.9853556485rem + 10.460251046vw ,5.625rem)) {
+    .page__hero {
+      margin-bottom: clamp(2.5rem ,-3.9853556485rem + 10.460251046vw ,5.625rem)
     }
   }
-  @supports not (padding-top:clamp(2.5rem ,-3.9853556485rem + 10.460251046vw ,5.625rem)) {
-    .professional {
-      padding-top: calc(2.5rem + 3.125*(100vw - 62rem)/ 29.875)
+  @supports not (margin-bottom:clamp(2.5rem ,-3.9853556485rem + 10.460251046vw ,5.625rem)) {
+    .page__hero {
+      margin-bottom: calc(2.5rem + 3.125*(100vw - 62rem)/ 29.875)
     }
   }
   @supports (padding-top:clamp(2rem ,-6.5606694561rem + 13.8075313808vw ,6.125rem)) {
@@ -4128,6 +4116,18 @@ body {
       -webkit-column-gap: calc(1.875rem + 6.75*(100vw - 62rem)/ 29.875);
       -moz-column-gap: calc(1.875rem + 6.75*(100vw - 62rem)/ 29.875);
       column-gap: calc(1.875rem + 6.75*(100vw - 62rem)/ 29.875)
+    }
+  }
+}
+@media (min-width:61.99875em)and (max-width:91.875em) {
+  @supports (width:clamp(12.5rem ,-14.9962030877rem + 44.349608803vw ,25.75rem)) {
+    .hero__image {
+      width: clamp(12.5rem ,-14.9962030877rem + 44.349608803vw ,25.75rem)
+    }
+  }
+  @supports not (width:clamp(12.5rem ,-14.9962030877rem + 44.349608803vw ,25.75rem)) {
+    .hero__image {
+      width: calc(12.5rem + 13.25*(100vw - 61.99875rem)/ 29.87625)
     }
   }
 }
