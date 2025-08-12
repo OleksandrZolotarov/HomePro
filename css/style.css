@@ -864,7 +864,7 @@ body {
   background-color: #9ea3b5
 }
 .hero__title {
-  max-width: 42.0625rem;
+  max-width: 30.625rem;
   text-align: center
 }
 .hero__title:not(:last-child) {
@@ -2421,9 +2421,9 @@ body {
     font-weight: 600
   }
   .hero__highlights {
-    -webkit-column-gap: 3.4375rem;
-    -moz-column-gap: 3.4375rem;
-    column-gap: 3.4375rem
+    -webkit-column-gap: 2.5rem;
+    -moz-column-gap: 2.5rem;
+    column-gap: 2.5rem
   }
   .hero__highlights-text p {
     font-size: .875rem
@@ -2601,7 +2601,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: .09375rem;
+    width: .0625rem;
     height: 100%;
     background: linear-gradient(rgba(79,102,183,0) 0,#4e66b7 48%,rgba(79,102,183,0) 100%)
   }
@@ -3396,18 +3396,18 @@ body {
       right: calc(-.6875rem + -.9375*(100vw - 20rem)/ 71.875)
     }
   }
-  @supports ((-moz-column-gap:clamp(3.4375rem ,3.2809782609rem + 0.7826086957vw ,4rem)) or (column-gap:clamp(3.4375rem ,3.2809782609rem + 0.7826086957vw ,4rem))) {
+  @supports ((-moz-column-gap:clamp(2.5rem ,2.0826086957rem + 2.0869565217vw ,4rem)) or (column-gap:clamp(2.5rem ,2.0826086957rem + 2.0869565217vw ,4rem))) {
     .hero__highlights {
-      -webkit-column-gap: clamp(3.4375rem ,3.2809782609rem + .7826086957vw ,4rem);
-      -moz-column-gap: clamp(3.4375rem ,3.2809782609rem + .7826086957vw ,4rem);
-      column-gap: clamp(3.4375rem ,3.2809782609rem + .7826086957vw ,4rem)
+      -webkit-column-gap: clamp(2.5rem ,2.0826086957rem + 2.0869565217vw ,4rem);
+      -moz-column-gap: clamp(2.5rem ,2.0826086957rem + 2.0869565217vw ,4rem);
+      column-gap: clamp(2.5rem ,2.0826086957rem + 2.0869565217vw ,4rem)
     }
   }
-  @supports not ((-moz-column-gap:clamp(3.4375rem ,3.2809782609rem + 0.7826086957vw ,4rem)) or (column-gap:clamp(3.4375rem ,3.2809782609rem + 0.7826086957vw ,4rem))) {
+  @supports not ((-moz-column-gap:clamp(2.5rem ,2.0826086957rem + 2.0869565217vw ,4rem)) or (column-gap:clamp(2.5rem ,2.0826086957rem + 2.0869565217vw ,4rem))) {
     .hero__highlights {
-      -webkit-column-gap: calc(3.4375rem + .5625*(100vw - 20rem)/ 71.875);
-      -moz-column-gap: calc(3.4375rem + .5625*(100vw - 20rem)/ 71.875);
-      column-gap: calc(3.4375rem + .5625*(100vw - 20rem)/ 71.875)
+      -webkit-column-gap: calc(2.5rem + 1.5*(100vw - 20rem)/ 71.875);
+      -moz-column-gap: calc(2.5rem + 1.5*(100vw - 20rem)/ 71.875);
+      column-gap: calc(2.5rem + 1.5*(100vw - 20rem)/ 71.875)
     }
   }
   @supports (font-size:clamp(0.875rem ,0.8054347826rem + 0.347826087vw ,1.125rem)) {
