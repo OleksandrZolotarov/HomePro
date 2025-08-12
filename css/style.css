@@ -2601,7 +2601,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: .0625rem;
+    width: .09375rem;
     height: 100%;
     background: linear-gradient(rgba(79,102,183,0) 0,#4e66b7 48%,rgba(79,102,183,0) 100%)
   }
