@@ -864,7 +864,6 @@ body {
   background-color: #9ea3b5
 }
 .hero__title {
-  max-width: 30.625rem;
   text-align: center
 }
 .hero__title:not(:last-child) {
@@ -2259,6 +2258,9 @@ body {
 @media (max-width:62em) {
   .page__hero {
     margin-bottom: 2.5rem
+  }
+  .hero__title {
+    max-width: 30.625rem
   }
   .professional__content {
     padding-top: 2rem
